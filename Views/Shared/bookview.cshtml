@@ -1,0 +1,16 @@
+
+<h1>@ViewData["Title"]</h1>
+
+<table>
+    <tr>
+        <th>Title</th>
+        <th>Release Year</th>
+    </tr>
+    @foreach (var item in ViewBag.Books)
+    {
+        <tr>
+            <td>@item.Title</td>
+            <td>@item.ReleaseYear</td>
+        </tr>
+    }
+</table>
